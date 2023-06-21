@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+
+
+    {% block contenido %}
+    <div class="container1">
+        <h1>product List</h1>
+    
+        {% if product_list %}
+        <ul>
+    
+          {% for product in product_list %}
+          <li>
+            <a href="{{ product.get_absolute_url }}">{{ product.title }}</a> ({{product.price}})
+          </li>
+          {% endfor %}
+    
+        </ul>
+        {% else %}
+          <p>There are no products in the shop.</p>
+          <p>It is now {{ current_date }}.</p>
+        {% endif %}
+    </div>
+    {% endblock %}
+
+    <div>
+      {% block content %} Producto Cantidad Precio total {% para el artículo en el carrito %} {{ item.product.name }} {{ item.quantity }} {{ item.total_price }} {% endfor %} {% endblock % } 
+    </div>

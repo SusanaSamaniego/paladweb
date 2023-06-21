@@ -1,0 +1,365 @@
+{%load static%}
+
+<!DOCTYPE html>
+{% load django_bootstrap5 %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE|default:'en_us' }}">
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <!-- Page title -->
+ <title>{% block bootstrap5_title %}compañía de venta de comercio electronico y sitios webs{% endblock %}</title>
+
+ <!-- Bootstrap CSS -->
+ {% bootstrap_css %}
+
+ <!-- Bootstrap JavaScript if it is in head -->
+ {% if 'javascript_in_head'|bootstrap_setting %}
+     {% bootstrap_javascript %}
+ {% endif %}
+
+ {% block bootstrap5_extra_head %}{% endblock %}
+
+
+<head>
+  <style>
+body {
+      background-image:url("static/fondo.webp");
+      background-repeat: no-repeat, repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+head{
+      background-image:url("static/fondo.webp");
+      background-repeat: no-repeat, repeat;
+      background-position: center;
+     background-size: cover;
+     background-attachment: scroll;
+    }
+
+
+container2{
+background-image: url(static/hojas.webp);
+text-decoration-color: blue;}
+.container4{background-image: url(static/responsive.jpg);
+    background-repeat: no-repeat;
+    box-sizing: unset;
+
+
+}
+.container4{text-align: center;
+    text-justify: auto;
+   padding: 15%;
+
+}
+.container3{background-color: rgb(173, 251, 246);}
+h1.container3{color: rgb(250, 235, 215);}
+.container1{background-color: aqua;
+backface-visibility: inherit;
+padding: 10px; ;
+text-align: center;
+}
+.h1.container1 {color: rgba(35, 34, 32, 0.855);}
+h2{ color:rgb(238, 60, 66)}
+h3 {color: rgb(254, 251, 254);}
+    </style>
+  
+    <!-- Required meta tags -->
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Page title -->
+    <title>Política de privacidad paladweb</title>
+   
+
+
+
+</head>
+
+
+<body>
+   
+{% block bootstrap5_aftercontent %}
+<div class="container1" align='center'>
+    <table>
+        <td>  <img src = "{% static 'logo-negrofondotr-paladweb.png' %}" align="center" height="300" width="300" class="d-inline-block align-top"></td>
+<td>
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/"><h3>inicio</h3></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PV.html"><h3>politica <br>de privacidad</h3></a>
+    </li>
+   <!--registrate--> <li class="nav-item">
+      <a class="nav-link" href="http://127.0.0.1:8000/admin/auth/user/add/"><h3>Register</h3></a>
+    </li>
+<!--inicia seción-->
+<li class="nav-item">
+    <a class="nav-link" href="http://127.0.0.1:8000/admin/login/?next=/admin/"><h3>Login</h3></a>
+  </li>
+
+
+
+
+    <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/admin/logout/"><h3>Logout</h3></a>
+      </li>
+
+    
+  </ul>
+</td>
+
+</table>
+</div>
+
+<div class="container2" align='center' >
+<h1 aling="center"> Bienvenido al creador de sitios webs  Paladweb </h1>
+<h1 aling="center"> Te entregamos tu web en poco tiempo pero con excelentes páginas adaptadas a lo que vendes</h1>
+<div class="container4"align='center'> </h2>
+  
+    <img src = "{% static 'responsive.jpg' %}" align="center" height="300" width="300" class="d-inline-block align-top"></div>
+</div></div>
+<br>
+<div class="container3" align="center" >
+
+
+</div>
+
+
+<div class="container4" align="center">
+    <div>
+      <h1>Política de privacidad de este comercio electrónico</h1>  
+    </div>
+   <p><h6> Ultima fecha de revisión: 21 de junio de 2023
+    Creemos que tu privacidad es importante. Para el responsable de esta web, que leas y muestres interés en este
+    apartado demuestra que tienes interés en la misma. Deberías hacerlo cada vez que visitas nuevos sitios web,
+    especialmente si te van a solicitar datos personales. A continuación, en este documento, te explicamos qué datos
+    personales recabamos, en base a qué, durante cuánto tiempo se almacenarán y aspectos relacionados con la normativa
+    de protección de datos, en cumplimiento con la legislación vigente. Te animamos a leer detenidamente estos términos
+    antes de facilitar tus datos personales. Para los menores de 14 años se requiere el consentimiento de los padres o
+    tutores para el tratamiento de sus datos. Si eres menor de 14, no deberías dejar tus datos en eta web a menos que lo
+    autoricen tus padres. En ningún caso se recabarán del menor de edad datos relativos a la situación profesional,
+    económica o a la intimidad de los otros miembros de la familia, sin el consentimiento de éstos. Si tienes cualquier
+    duda al respecto, por favor, contacta a través de las direcciones de correo electrónico del responsable del tratamiento
+    o, en su caso, del delegado de protección de datos. Este responsable asume un compromiso permanente con la
+    privacidad y garantiza las mejores prácticas en el tratamiento de tus datos personales.
+    En cumplimiento con lo dispuesto en la normativa de protección de datos (Reglamento UE 2016/679, de 27 de abril
+    de 2016), y de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y Garantía de los
+    Derechos Digitales,  (en adelante, "La Entidad Titular" o
+    simplemente "El Titular"), Titular del sitio web www.paladweb.com (en adelante, el “Sitio Web”), establece la
+    siguiente Política de Privacidad, que seguirá en el tratamiento de datos de carácter personal. Dicha política se
+    entiende, en todo caso, sin perjuicio de los dispuesto en el correspondiente Aviso Legal y la correspondiente Política
+    de Cookies.
+    1.- Responsable del Tratamiento
+    Responsable del Tratamiento: paladweb
+    NIF:Y1295837P
+    Dirección: Alberto Tortajada 2, 46680, valencia Algemesí
+    Email: sitio.paladweb@gmail.com
+    Teléfono: 663508774
+    Datos del Delegado de Protección de Datos: sitio.paladwe@gmail.com
+    Tratamos de garantizar la privacidad de los usuarios de esta web. Debes saber que nunca solicitaremos información
+    personal a menos que realmente sea necesaria para la prestación de servicios, nunca la compartiremos con terceros
+    (salvo determinados casos en los que resulte imprescindible y en base a situaciones legítimas e informadas
+    previamente) y nunca utilizearemos tus datos para otros fines que no tengan que ver con la relación profesional
+    vendedor-comprador. Esta entidad asume los compromisos de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección
+    de Datos Personales y Garantía de los Derechos Digitales, el Reglamento (UE) 2016/679 del Parlamento Europeo y
+    del Consejo y la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico
+    (LSSICE o LSSI), así como la normativa que las desarrolle o complemente.
+    Por tanto, los datos que pudieran solicitarse a los usuarios del presente Sitio Web a través de formularios de contacto,
+    aquellas otras proporcionadas por el mero hecho de acceder al Sitio Web (cookies), aquellos otros relacionados con
+    DOC 21
+    los posibles comentarios en las distintas páginas corporativas de las redes sociales enlazadas desde el presente Sitio
+    Web, los datos personales que el usuario introduzca dentro de las secciones habilitadas o las proporcionados por el
+    resto de vías o canales de comunicación habilitados (por ejemplo, correo electrónico) serán tratados por el
+    responsable del tratamiento indicado en cumplimiento siempre con la legislación vigente.
+    2.- Finalidades del tratamiento
+    Cuando un usuario visita este sitio web está facilitando información de carácter personal. Esa información puede
+    incluir datos de carácter personal como pueden ser tu dirección IP, nombre, dirección física, dirección de correo
+    electrónico, número de teléfono, y otra información. Las finalidades por las cuales tratamos tus datos dependerán del
+    contexto o sección en la que se le soliciten:
+    -Por el mero hecho de visitar el Sitio Web, existen determinadas informaciones que se recoge en los servidores que
+    prestan servicios de hosting. Entre dichas informaciones está la relativa a la dirección IP desde la que se accede al
+    Sitio Web. La finalidad del tratamiento en este caso es facilitarle la navegación por la web. También podremos
+    recoger determinada información (cookies), que trataremos según la Política de Cookies específica que puede
+    consultar.
+    -Si nos proporciona los datos a través de alguno o algunos de los formularios habilitados, la finalidad será la relativa a
+    la indicada en el formulario correspondiente. Concretamente:
+    -En el caso de introducción de sus datos en el formulario de contacto, trataremos sus datos exclusivamente
+    para ponernos en contacto con Vd. a través de los medios empleados y para contestarle en su caso en relación a su
+    petición o consulta.
+    -En el caso de introducción de sus datos en los formularios de reclamaciones, trataremos sus datos en
+    relación al seguimiento que en su caso realicemos en relación a la reclamación efectuada, y para ponernos en contacto
+    con Vd. a través de los medios empleados. Este servicio será coordinado por los Servicios jurídicos de la entidad, que
+    tramitará y resolverá cuantas quejas y reclamaciones referidas a la actividad colegial o profesional de los colegiados
+    que se presenten por cualquier consumidor o usuario, así como por asociaciones y organizaciones de consumidores y
+    usuarios en su representación o en defensa de sus intereses.
+    -Los datos que nos haga llegar a través de la sección “Bolsa de Trabajo” serán recabados con finalidades de
+    gestión de la bolsa de trabajo, y comunicados a aquellos otros colegiados o empresas interesadas que lo soliciten. En
+    el caso de tratamiento de datos de profesionales con inclusión o no de sus datos de formación, queda informado de
+    forma inequívoca y precisa, y autoriza al paladweb de valencia Algemesí a mantener y tratar en el
+    citado fichero los datos de su persona con la finalidad de facilitar su incorporación al mercado electrónico en el sector
+    relacionado con la venta y compra de servicios digitales y facilitar copia de la presente ficha a los posibles ofertantes de productos en
+    el citado ámbito. Sus datos podrán publicarse en el presente sitio web.
+    -Si nos proporciona datos personales a través de correo electrónico o a través de otros medios (tradicionales o no), en
+    general trataremos sus datos en relación a la gestión o consulta realizada. En cumplimiento con la Ley 34/2002, de
+    Servicios de la Sociedad de la Información y Comercio Electrónico, El Titular no remitirá comunicaciones
+    comerciales sin identificarlas como tales y sin una previa información al respecto. A estos efectos no será
+    considerado como comunicación comercial toda la información que se envíe a los interesados siempre que tenga por
+    finalidad el mantenimiento de la relación contractual o respuesta ante su solicitud o aquellas otras informaciones
+    relacionadas con su solicitud -en su caso- y que se deriven directamente de esta relación.
+    -Si nos proporciona información a través de alguna o algunas de las redes sociales que esta entidad mantiene y que
+    están enlazadas a través del presente Sitio Web, asumiendo esta entidad la figura de Responsable del Tratamiento de
+    los datos aportados (por ejemplo, fotos subidas por nosotros o por terceros, comentarios que el interesado realice en
+    relación a publicaciones que hagamos, etc), trataremos la información exclusivamente en relación a su consulta,
+    gestión o comentario realizado, y siempre dentro de la red social y en el contexto de la misma, no procediéndose en
+    ningún caso a la extracción de esos datos salvo que obtengamos consentimiento para ello por parte del interesado. No
+    obstante, el uso de estas plataformas está sujeto a la aceptación íntegra de sus condiciones, y ello implica el
+    tratamiento de sus datos con otras condiciones distintas a las aquí expuestas. Los perfiles oficiales en las redes
+    sociales enlazadas desde este Sitio Web han sido creados para que conozca mejor nuestra actividad y crear un canal
+    alternativo de comunicación con las personas interesadas por nuestra entidad y los servicios que ofrecemos, pero
+    declinamos la responsabilidad del tratamiento de datos que las empresas que gestionan las mencionadas redes
+    sociales hagan de los mismos.
+    -Existen mas finalidades relacionadas con la gestión de cookies o con la información que recabamos de forma
+    automática por el mero hecho de visitar este sitio web: para una correcta gestión a nivel técnico del sitio web, en
+    relación a la gestión analítica del mismo, para la mejora de nuestros servicios, etc.
+    3.- Periodo de conservación de sus datos
+    Depende del tratamiento de datos realizado:
+    -Los datos que nos haga llegar a través de los medios que este Sitio Web pone a su disposición (formularios, correo
+    electrónico) se conservarán mientras dure la relación con el interesado o el mismo nos retire su consentimiento en su
+    caso. Posteriormente conservaremos los datos según exista o no obligación legal, siendo en cualquier caso el periodo
+    mínimo exigido dependiendo de la relación o gestión que se realice. Al respecto, y como referencia, le comunicamos
+    que existe el plazo de 5 años que establece el art. 1964 del Código Civil (acciones personales sin plazo especial).
+    -Los datos incluídos en las redes sociales enlazadas a través del presente Sitio Web se mantendrán por nuestra parte
+    hasta que el interesado retire su consentimiento. Sin embargo, es posible que las entidades responsables conserven
+    estos datos según otras politicas de tratamiento de la que no nos hacemos responsables en ningún caso.
+    -En general, si los datos proporcionados ya no son necesarios y no existe obligación legal para su conservación, serán
+    destruidos.
+    4.- Legitimación para el tratamiento de sus datos.
+    Depende del tratamiento de datos realizado:
+    -La existencia de una o varias obligaciones legales que nos obligan al tratamiento. Por ejemplo, en el caso de
+    reclamaciones, trataremos sus datos al existir una ley que obliga al tratamiento de sus datos (art. 12 de la Ley de
+    Colegios Profesionales, que obliga a las instituciones a la puesta a disposición de medios electrónicos para los
+    ciudadanos).
+    -Existe una relación contractual o precontractual con el interesado. Por ejemplo, si emplea alguno de los formularios
+    existentes en el sitio web para hacernos llegar alguna consulta, trataremos sus datos al establecerse un vínculo con
+    nuestra entidad.
+    -Consentimiento del interesado.
+    5.- Destinatario de sus datos.
+    Además del Responsable del Tratamiento arriba expuesto, los datos podrán tratarse por otras entidades dependiendo
+    de la naturaleza del tratamiento de datos:
+    -Determinadas empresas de servicios relacionados con el presente Sitio Web. Por ejemplo, la entidad que nos presta
+    servicios de hosting (alojamiento).
+    -Determinadas empresas responsables de las cookies que se alojan en su equipo por el mero hecho de visitar el
+    presente Sitio Web pueden tener información asociada a su dirección IP, hábitos de navegación, etc, según se explica
+    en la correspondiente Política de Cookies.
+    -Esta entidad dispone de varios perfiles en redes sociales. En caso de utilización, las entidades titulares de las
+    referidas redes sociales también podrán tratar sus datos personales en concordancia con lo dipuesto en sus respectivas
+    políticas de privacidad.
+    -Por obligación legal, Organismos Públicos, Agencia Tributaria, Jueces y Tribunales y, en general, Autoridades
+    competentes, cuando este responsable tenga la obligación legal de facilitarlos.
+    Este Responsable del Tratamiento sigue unos criterios estrictos de selección de proveedores de servicios con el fin de
+    dar cumplimiento a sus obligaciones en materia de protección de datos y se compromete a suscribir con ellos el
+    correspondiente contrato de tratamiento de datos mediante el que les impondrá obligaciones relacionadas con la
+    imposición de medidas técnicas y organizativas apropiadas, tratar los datos personales para las finalidades pactadas y
+    atendiendo únicamente a las instrucciones documentadas y suprimir o devolver los datos a este responsable una vez
+    finalice la prestación de los servicios.
+    6.- Sus Derechos.
+    Cualquier persona tiene derecho a obtener confirmación sobre si en esta entidad estamos tratando datos personales
+    que les conciernan o no. Las personas interesadas tienen derecho a acceder a sus datos personales, así como a solicitar
+    la rectificación de los datos inexactos o, en su caso, solicitar su supresión cuando, entre otros motivos, los datos ya no
+    sean necesarios para los fines que fueron recogidos. En determinadas circunstancias, los interesados podrán solicitar
+    la limitación del tratamiento de sus datos, en cuyo caso únicamente los conservaremos para el ejercicio o la defensa
+    de reclamaciones. En otras circunstancias y por motivos relacionados con su situación particular, los interesados
+    podrán oponerse al tratamiento de sus datos. En aquellos casos en los que nos haya dado el consentimiento, le
+    informamos adicionalmente que tiene el derecho a retirar el mismo en cualquier momento, sin que ello afecte a la
+    licitud del tratamiento basado en el consentimiento previo a su retirada. Si lo solicita, esta entidad dejará de tratar los
+    datos, salvo por motivos legítimos imperiosos, o el ejercicio o la defensa de posibles reclamaciones. También puede
+    requerirnos para que sus datos sean tratados por otra entidad, facilitando esta entidad la portabilidad de sus datos al
+    nuevo responsable. Con tal fin, se han elaborado unos formularios específicos (que están a su disposición y que puede
+    solicitar) para que pueda ejercitar sus derechos de acceso, rectificación, supresión, limitación al tratamiento,
+    oposición al tratamiento, oposición a la toma de decisiones individuales automatizadas incluída la elaboración de
+    perfiles y a la portabilidad de los datos. En todo caso, si considera que estos derechos no se han satisfecho
+    convenientemente por nuestra parte, le informamos que puede presentar una reclamación ante la autoridad de control
+    (Agencia Española de Protección de Datos, Jorge Juan 6, 28001, Madrid, o ante su sede electrónica
+    https://sedeagpd.gob.es).
+    Si lo prefiere, el interesado puede dirigirse por correo postal a la dirección que figura en el encabezamiento, o por
+    correo electrónico en el email indicado, incluyendo fotocopia de su DNI/NIF o documento equivalente para justificar
+    su identidad y solicitar el ejercicio de los derechos arriba mencionados.
+    7.- Especial referencia a redes sociales
+    La Entidad Titular mantiene varias páginas y/o perfiles en varias redes sociales, enlazadas a través del presente Sitio
+    Web. La entidad Titular no será responsable de lo publicado por terceros en las mencionadas redes sociales. El uso y
+    tratamiento de datos que terceros hagan en las mencionadas redes sociales estará sometido a las condiciones
+    generales o particulares distintas a la presente. La Entidad Titular recomienda su atenta lectura y concienciación al
+    respecto.
+    -En relación a Twitter, cuando un usuario nos sigue pinchando el botón “Seguir”, tendremos acceso a la información
+    de las personas que nos siguen, concretamente, el nombre de usuario, fotografía (en caso de que el usuario haya
+    puesto una fotografía en su perfil), y comentarios o “Tweets” realizados así como al resto de la información que ha
+    publicado en su perfil como por ejemplo usuarios a los que sigue y sus seguidores, aunque no utilizaremos dicha
+    información. En especial, la información que el usuario da en su "biografía" puede ser accesible por nosotros. Al
+    igual que en la anterior plataforma, es responsabilidad del usuario el uso que haga de la Red Social. Los datos de los
+    usuarios que nos siguen en Twitter los utilizamos únicamente para gestionar y responder los “Tweets” o mensajes que
+    intercambiamos con ellos. Puede consultar la política de privadad de Twitter en el siguiente enlace:
+    https://twitter.com/es/privacy
+    Twitter utiliza estos datos para elaboración de perfiles, comunicación, conexión, creación e intercambio de contenido
+    entre usuarios, así como entre los usuarios y el público. Los tuits —mensajes cortos— pueden crearse y enviarse a
+    través de Twitter. Los tuits se muestran a los seguidores, a los usuarios de Twitter y al público. Queremos difundir
+    contenido a través de esta red social y por eso lo hemos integrado.
+    El responsable del servicio es el siguiente:
+    Twitter, Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, Estados Unidos.
+    Si hay botones integrados en nuestro sitio web, Twitter puede descargar automáticamente información personal.
+    Twitter recibe datos personales, como la dirección IP de la persona y sus hábitos de navegación, para optimizar la
+    publicidad dirigida al usuario. Twitter conserva esta información en los Estados Unidos de América y puede
+    compartirla con terceros cuando corresponda. Si el usuario ha iniciado sesión en Twitter con su perfil, esta entidad
+    reconoce al usuario en cada actividad. Se envían datos personales como la dirección IP de la persona en cuestión,
+    clics en páginas, hora y ubicación de acceso, frecuencia de visitas, enlaces de origen, enlaces de seguimiento y datos
+    sobre la duración de la estancia en el sitio web. Si los botones están integrados en nuestro sitio web, Twitter puede
+    asignar cualquier actividad realizada por el usuario a su perfil, así como conservarla y tratarla. Ello implica la
+    transferencia de sus datos fuera del Espacio Económico Europeo. Las garantías de privacidad que esta entidad da al
+    respecto se pueden revisar en su política de privacidad.
+    8.- Cookies y otros aspectos.
+    Esta web incluye un certificado SSL. Se trata de un protocolo de seguridad que hace que tus datos viajen de manera
+    íntegra y segura. En esta entidad hemos asumidos las medidas de seguridad apropiadas después del correspondiente
+    análisis de riesgos realizado. Entre dichas medidas de seguridad se incluye, en particular, la transmisión encriptada de
+    datos entre su navegador y nuestro servidor.
+    Como usuario, eres el único responsable de la veracidad y corrección de los datos que remitas en este sitio web. El
+    Titular no aceptará ningún tipo de responsabilidad al respecto, asegurando la exactitud, vigencia y autenticidad de los
+    datos personales facilitados.
+    Este Responsable del Tratamiento se reserva el derecho de modificar y/o actualizar la información sobre protección
+    de datos cuando sea necesario para el correcto cumplimiento del Reglamento de Protección de Datos. Si se produjera
+    alguna modificación, el nuevo texto será publicado en esta página, donde podrá tener acceso a la política actual. En
+    cada caso, la relación con los usuarios se regirá por las normas previstas en el momento preciso en que se accede al
+    web. A todos los efectos, se puede comprobar la vigencia del documento en el encabezado.
+    Usamos el servicio reCAPTCHA de Google para determinar si una persona o un equipo informático escribe en
+    nuestro formulario de contacto o de boletín informativo.
+    El operador y la parte responsable del tratamiento de datos personales es
+    Google Inc., 1600 Amphitheatre Pkwy, Mountain View, CA 94043-1351, Estados Unidos.
+    Para obtener más información sobre la política de privacidad, cómo se tratan los datos y el servicio, consulte:
+    www.google.com/policies/privacy/
+    Google usa los siguientes datos para verificar si usted es una persona o un equipo informático: dirección IP del
+    dispositivo utilizado, sitio web nuestro que visita y tiene el captcha incluido, fecha y duración de la visita, datos de
+    identificación del tipo de navegador y sistema operativo usados, cuenta de Google, inicio de sesión en Google,
+    movimientos del ratón en superficies de reCAPTCHA y tareas que requieren que usted identifique imágenes.
+    Ello implica la transferencia de sus datos fuera del Espacio Económico Europeo. Las garantías de privacidad que esta
+    entidad da al respecto se pueden revisar en su política de privacidad (Cláusulas Contractuales Tipo).
+    En relación a las cookies que se recaban en este sitio web le remitimos a nuestra Política de Cookies.
+    9.- Zona privada
+    Existe un apartado privado dirigido exclusívamente a paladweb. Para acceder al mencionado
+    apartado, previamente deberá haber obtenido una contraseña proporcionada por este comercio. El usuario será el único
+    responsable de la custodia y conservación de la misma. El usuario es responsable de la seguridad y utilización
+    correcta de su usuario y contraseña, y deberá adoptar las medidas necesarias para que sean estrictamente
+    confidenciales y sean utilizados únicamente por aquellas personas que estén debidamente autorizadas para ello. Si en
+    cualquier momento el usuario tuviera razones para creer que su clave de usuario son o pueden ser conocidas por
+    alguna persona no autorizada para ello, deberá ponerlo inmediatamente en conocimiento de esta entidad a través de la
+    dirección de email sitio.paladweb@gmail.com
+</h6></p>
+</div>
+ 
+{% endblock %}
+
+
+</body>
+</html>

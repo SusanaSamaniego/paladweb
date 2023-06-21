@@ -1,0 +1,247 @@
+{%load static%}
+
+<!DOCTYPE html>
+{% load django_bootstrap5 %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE|default:'en_us' }}">
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <!-- Page title -->
+ <title>{% block bootstrap5_title %}compañía de venta de comercio electronico y sitios webs{% endblock %}</title>
+
+ <!-- Bootstrap CSS -->
+ {% bootstrap_css %}
+
+ <!-- Bootstrap JavaScript if it is in head -->
+ {% if 'javascript_in_head'|bootstrap_setting %}
+     {% bootstrap_javascript %}
+ {% endif %}
+
+ {% block bootstrap5_extra_head %}{% endblock %}
+
+
+<head>
+  <style>
+body {
+      background-image:url("static/fondo.webp");
+      background-repeat: no-repeat, repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+.head{
+      background-image:url("static/fondo.webp");
+      background-repeat: no-repeat, repeat;
+      background-position: center;
+     background-size: cover;
+     background-attachment: scroll;
+    }
+footer{
+background-image:url("static/hojas.webp") ;
+background-repeat: no-repeat, repeat;
+background-size: cover;}
+
+.container1{background-;}
+.container2{background-color: bisque;
+text-decoration-color: blue;}
+.container4{background-image: url(static/responsive.jpg);
+    background-repeat: no-repeat;
+    box-sizing: unset;
+
+
+}
+.container3{background-color: rgb(173, 251, 246);}
+h1.container3{color: rgb(250, 235, 215);}
+.container1{background-color: aqua;
+backface-visibility: inherit;
+padding: 10px; ;
+text-align: center;
+}
+.h1.container1 {color: rgba(35, 34, 32, 0.855);}
+h2{ color:rgb(238, 60, 66)}
+h3 {color: rgb(254, 251, 254);}
+    </style>
+  
+    <!-- Required meta tags -->
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Page title -->
+    <title></title>
+   
+
+
+<img src = "{% static 'logot.png' %}" height="200" width="200" class="d-inline-block align-top width="50" height="50 "">
+   
+</head>
+
+
+<body>
+   
+{% block bootstrap5_aftercontent %}
+<div class="container1" align='center'>
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/"><h3>inicio</h3></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PV.html"><h3>politica <br>de privacidad</h3></a>
+    </li>
+    <!--INICIA SECION-->
+    <li class="nav-item">
+      <a class="nav-link" href="http://127.0.0.1:8000/admin/login/?next=/admin/"><h3>Login</h3></a>
+    </li>
+    <!--SALIR-->
+    <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/admin/logout/"><h3>Logout</h3></a>
+      </li>
+  <!--registrate--> <li class="nav-item">
+    <a class="nav-link" href="http://127.0.0.1:8000/admin/auth/user/add/"><h3>Register</h3></a>
+</li>
+
+    
+  </ul>
+</div>
+
+<div class="container2" align='center' >
+<h1 aling="center">¿Como es tener una web? </h1>
+<h1 aling="center">Es una solución para tener más ventas y llegar a más personas de diferentes lugares</h1>
+<div class="container4"align='center'> <h2>Adaptado a  todos los dispositivos</h2>
+  
+    <img src = "{% static 'responsive.jpg' %}" align="center" height="300" width="300" class="d-inline-block align-top"></div>
+</div></div>
+<br>
+<div class="container2" >
+<div class="row align-items-start">
+<div class="col">
+ 
+ <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-dash-fill" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6z"/>
+</svg>
+<button type="button" class="btn btn-primary"><h3>comprar</h3><a>
+
+</a></button>
+</div>
+<br>
+<div class="col">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-square-fill" viewBox="0 0 16 16">
+<path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm7.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z"/>
+</svg>
+<h1>landin page</h1>
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-dash-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6z"/>
+</svg>
+<img src = "{% static 'landins.jpg' %}" height="200" width="200" class="d-inline-block align-top">
+<button type="button" class="btn btn-primary"><h3>comprar</h3><a>
+  
+</a></button>
+</div>
+
+<div class="col">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-square-fill" viewBox="0 0 16 16">
+<path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm4.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z"/>
+</svg>
+<h1>Página de dos/tres enlaces</h1>
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-dash-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6z"/>
+</svg>
+<img src = "{% static 'landinblack.jpg' %}" height="200" width="200" class="d-inline-block align-top">
+<button type="button" class="btn btn-primary"><h3>comprar</h3><a>
+  
+</a></button>
+<h2></h2>
+</div>
+</div>
+
+<div class="row align-items-center">
+<div class="col">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-3-square-fill" viewBox="0 0 16 16">
+<path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm5.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"/>
+</svg>
+<h1>Página de 5-7 enlaces</h1>
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-dash-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6z"/>
+</svg>
+<img src = "{% static 'landing page-2.jpg' %}" height="200" width="200" class="d-inline-block align-top">
+<button type="button" class="btn btn-primary"><h3>comprar</h3><a>
+  
+</a></button>
+</div>
+
+<div class="col">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-4-square-fill" viewBox="0 0 16 16">
+<path d="M6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z"/>
+<path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm5.519 5.057c.22-.352.439-.703.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265Z"/>
+</svg>
+<h1>Página web de 10 enlaces</h1> 
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-dash-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6z"/>
+</svg>
+<img src = "{% static 'landinexample.png' %}" height="200" width="200" class="d-inline-block align-top">
+<button type="button" class="btn btn-primary"><h3>comprar</h3><a>
+  
+</a></button>
+
+</div>
+
+<div class="col">
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-dash-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6z"/>
+      </svg>
+      <h1>CMS </h1>    
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-5-square-fill" viewBox="0 0 16 16">
+<path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm5.994 12.158c-1.57 0-2.654-.902-2.719-2.115h1.237c.14.72.832 1.031 1.529 1.031.791 0 1.57-.597 1.57-1.681 0-.967-.732-1.57-1.582-1.57-.767 0-1.242.45-1.435.808H5.445L5.791 4h4.705v1.103H6.875l-.193 2.343h.064c.17-.258.715-.68 1.611-.68 1.383 0 2.561.944 2.561 2.585 0 1.687-1.184 2.806-2.924 2.806Z"/>
+</svg>
+<img src = "{% static 'landing.png' %}" height="200" width="200" class="d-inline-block align-top">
+<button type="button" class="btn btn-primary"><h3>comprar</h3><a>
+  
+</a></button>
+
+</div>
+</div>
+</div>
+<br>
+<div class="container3">
+<div class="row align-items-end">
+      <div class="col">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+    </svg>
+ <h1> Ventajas de utilizar el producto o servicio</h1>
+ </div>
+<div class="col">
+    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-android2" viewBox="0 0 16 16">
+    <path d="m10.213 1.471.691-1.26c.046-.083.03-.147-.048-.192-.085-.038-.15-.019-.195.058l-.7 1.27A4.832 4.832 0 0 0 8.005.941c-.688 0-1.34.135-1.956.404l-.7-1.27C5.303 0 5.239-.018 5.154.02c-.078.046-.094.11-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.697 3.697 0 0 0 3.5 5.02h9c0-.75-.208-1.44-.623-2.072a4.266 4.266 0 0 0-1.664-1.476ZM6.22 3.303a.367.367 0 0 1-.267.11.35.35 0 0 1-.263-.11.366.366 0 0 1-.107-.264.37.37 0 0 1 .107-.265.351.351 0 0 1 .263-.11c.103 0 .193.037.267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264Zm4.101 0a.351.351 0 0 1-.262.11.366.366 0 0 1-.268-.11.358.358 0 0 1-.112-.264c0-.103.037-.191.112-.265a.367.367 0 0 1 .268-.11c.104 0 .19.037.262.11a.367.367 0 0 1 .107.265c0 .102-.035.19-.107.264ZM3.5 11.77c0 .294.104.544.311.75.208.204.46.307.76.307h.758l.01 2.182c0 .276.097.51.292.703a.961.961 0 0 0 .7.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182c0 .276.097.51.292.703a.972.972 0 0 0 .71.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76c.291 0 .54-.103.749-.308.207-.205.311-.455.311-.75V5.365h-9v6.404Zm10.495-6.587a.983.983 0 0 0-.702.278.91.91 0 0 0-.293.685v4.063c0 .271.098.501.293.69a.97.97 0 0 0 .702.284c.28 0 .517-.095.712-.284a.924.924 0 0 0 .293-.69V6.146a.91.91 0 0 0-.293-.685.995.995 0 0 0-.712-.278Zm-12.702.283a.985.985 0 0 1 .712-.283c.273 0 .507.094.702.283a.913.913 0 0 1 .293.68v4.063a.932.932 0 0 1-.288.69.97.97 0 0 1-.707.284.986.986 0 0 1-.712-.284.924.924 0 0 1-.293-.69V6.146c0-.264.098-.491.293-.68Z"/>
+      </svg>
+<h1>Utiliza tus dispositivos caseros para acceder desde donde estés </h1>
+   </div>
+      <div class="col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+            <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+          </svg>
+     <h1> Notarás el rendimiento  desde el primer mes</h1>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+<!-- Bootstrap JavaScript if it is in body -->
+
+
+
+
+
+</body>
+<br clear="all">
+<footer>
+  <div class="container4"> </div>
+
+</footer>
+{% endblock %}
+</html>
